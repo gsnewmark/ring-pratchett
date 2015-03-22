@@ -1,5 +1,7 @@
 # ring-pratchett
 
+[![Circle CI](https://circleci.com/gh/gsnewmark/ring-pratchett.svg?style=svg)](https://circleci.com/gh/gsnewmark/ring-pratchett)
+
 A [Ring](https://github.com/ring-clojure/ring) middleware that adds
 `X-Clacks-Overhead` header to each response.
 
