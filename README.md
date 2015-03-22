@@ -16,7 +16,21 @@ Add the following dependency to your `project.clj`:
 
 ## Usage
 
-FIXME
+Middleware doesn't accept any options, so simply add it to your application
+middleware stack:
+
+```clojure
+(ns ring.app
+  (:require [ring.middleware.pratchett :refer [wrap-pratchett]]))
+
+(def handler)
+
+(def app
+  (-> handler
+      wrap-pratchett))
+```
+
+Detailed example could be found in the `examples/gtp`.
 
 ## License
 
